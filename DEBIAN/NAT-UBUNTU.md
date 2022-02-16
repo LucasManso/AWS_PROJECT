@@ -11,6 +11,7 @@ SERVER:
 	◽ iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
 	◽ netfilter-persistent save
 	◽ nano /etc/sysctl.conf  ###uncomment "net.ipv4.ip_forward = 1"
+	◽ sysctl -p
 	◽ nano chave.pem  ###Paste clientes key
 	◽ chmod 400 chave.pem
 
